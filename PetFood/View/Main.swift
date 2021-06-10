@@ -24,7 +24,7 @@ struct Main: View {
                         }, label: {
                             ZStack{
                                 RoundedRectangle(cornerRadius: 6).strokeBorder(Color("te"), lineWidth: 0.5).frame(width: 172, height: 32, alignment: .center).background(RoundedRectangle(cornerRadius: 6).foregroundColor( Color.init(#colorLiteral(red: 0.1804058254, green: 0.5030173659, blue: 0.9273634553, alpha: 1)))).opacity(selection == 1 ? 1 : 0)
-                                Text("Cats (\(model.modelCat.count)").foregroundColor(selection == 1 ? Color.white : Color("te")).font(.system(size: 14, weight: .regular, design: .default))
+                                Text("Cats (\(model.modelCat.count))").foregroundColor(selection == 1 ? Color.white : Color("te")).font(.system(size: 14, weight: .regular, design: .default))
                             }
                         })
                         Button(action: {
@@ -33,7 +33,7 @@ struct Main: View {
                             ZStack{
                                 
                                 RoundedRectangle(cornerRadius: 6).strokeBorder(Color("te"), lineWidth: 0.5).frame(width: 172, height: 32, alignment: .center).background(RoundedRectangle(cornerRadius: 6).foregroundColor(Color.init(#colorLiteral(red: 0.1804058254, green: 0.5030173659, blue: 0.9273634553, alpha: 1)))).opacity(selection == 2 ? 1 : 0)
-                                Text("Dogs (\(model.model.count)").foregroundColor(selection == 2 ? Color.white : Color("te")).font(.system(size: 14, weight: .regular, design: .default))
+                                Text("Dogs (\(model.model.count))").foregroundColor(selection == 2 ? Color.white : Color("te")).font(.system(size: 14, weight: .regular, design: .default))
                             }
                         })
                      
@@ -42,15 +42,15 @@ struct Main: View {
                 if selection == 1 {
                 VStack(spacing:32){
                     ForEach(0..<model.modelCat.count, id:\.self){ i in
-                    HStack{
+                        HStack(spacing:16){
                         WebImage(url: URL(string: "https://foodpets.madskill.ru/up/images/\(model.modelCat[i].image)")).resizable().frame(width: 55, height: 55, alignment: .center).mask(RoundedRectangle(cornerRadius: 12)).background( RoundedRectangle(cornerRadius:  12).strokeBorder(Color("te"),lineWidth: 0.5).frame(width: 56, height: 56, alignment: .center))
                        
-                        VStack(alignment:.leading){
+                            VStack(alignment:.leading,spacing:1){
                             Text("\(model.modelCat[i].FoodName)").foregroundColor(Color("te")).font(.system(size: 16, weight: .semibold, design: .default))
                             Text("\(model.modelCat[i].BrandName)").foregroundColor(Color("gr")).font(.system(size: 14, weight: .regular, design: .default))
                         }
                         Spacer()
-                        Text("\(model.modelCat[i].price) $").foregroundColor(Color("gr")).font(.system(size: 16, weight: .bold, design: .default))
+                        Text("\(model.modelCat[i].price) $").foregroundColor(Color("te")).font(.system(size: 16, weight: .bold, design: .default))
                         
                     }.frame(width: 343, alignment: .center)
                 }
@@ -58,15 +58,15 @@ struct Main: View {
                 }else{
                     VStack(spacing:32){
                         ForEach(0..<model.model.count, id:\.self){ i in
-                        HStack{
+                        HStack(spacing:16){
                             WebImage(url: URL(string: "https://foodpets.madskill.ru/up/images/\(model.model[i].image)")).resizable().frame(width: 55, height: 55, alignment: .center).mask(RoundedRectangle(cornerRadius: 12)).background( RoundedRectangle(cornerRadius:  12).strokeBorder(Color("te"),lineWidth: 0.5).frame(width: 56, height: 56, alignment: .center))
                            
-                            VStack(alignment:.leading){
+                            VStack(alignment:.leading,spacing:1){
                                 Text("\(model.model[i].FoodName)").foregroundColor(Color("te")).font(.system(size: 16, weight: .semibold, design: .default))
                                 Text("\(model.model[i].BrandName)").foregroundColor(Color("gr")).font(.system(size: 14, weight: .regular, design: .default))
                             }
                             Spacer()
-                            Text("\(model.model[i].price) $").foregroundColor(Color("gr")).font(.system(size: 16, weight: .bold, design: .default))
+                            Text("\(model.model[i].price) $").foregroundColor(Color("te")).font(.system(size: 16, weight: .bold, design: .default))
                             
                         }.frame(width: 343, alignment: .center)
                     }
