@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C37EF1DC267203290098F8FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EF1DB267203290098F8FB /* AppDelegate.swift */; };
 		C37EF1DE267203290098F8FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EF1DD267203290098F8FB /* SceneDelegate.swift */; };
 		C37EF1E0267203290098F8FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EF1DF267203290098F8FB /* ContentView.swift */; };
-		C37EF1E22672032B0098F8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37EF1E12672032B0098F8FB /* Assets.xcassets */; };
+		C37EF1E22672032B0098F8FB /* 7B8794.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37EF1E12672032B0098F8FB /* 7B8794.xcassets */; };
 		C37EF1E52672032B0098F8FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C37EF1E42672032B0098F8FB /* Preview Assets.xcassets */; };
 		C37EF1E82672032B0098F8FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C37EF1E62672032B0098F8FB /* LaunchScreen.storyboard */; };
 		C37EF1F32672032B0098F8FB /* PetFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EF1F22672032B0098F8FB /* PetFoodTests.swift */; };
 		C37EF1FE2672032B0098F8FB /* PetFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37EF1FD2672032B0098F8FB /* PetFoodUITests.swift */; };
+		C37EF20D26720E6D0098F8FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C37EF20C26720E6D0098F8FB /* Alamofire */; };
+		C37EF21026720E7D0098F8FB /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C37EF20F26720E7D0098F8FB /* SwiftyJSON */; };
+		C37EF21326720F030098F8FB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C37EF21226720F030098F8FB /* SDWebImageSwiftUI */; };
+		C3A45A0726720FDD006DDE87 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A45A0626720FDD006DDE87 /* Model.swift */; };
+		C3A45A0926720FE3006DDE87 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A45A0826720FE3006DDE87 /* ViewModel.swift */; };
+		C3A45A0F26721051006DDE87 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A45A0E26721051006DDE87 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		C37EF1DB267203290098F8FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C37EF1DD267203290098F8FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C37EF1DF267203290098F8FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C37EF1E12672032B0098F8FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C37EF1E12672032B0098F8FB /* 7B8794.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = 7B8794.xcassets; sourceTree = "<group>"; };
 		C37EF1E42672032B0098F8FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C37EF1E72672032B0098F8FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C37EF1E92672032B0098F8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,9 @@
 		C37EF1F92672032B0098F8FB /* PetFoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C37EF1FD2672032B0098F8FB /* PetFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFoodUITests.swift; sourceTree = "<group>"; };
 		C37EF1FF2672032B0098F8FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3A45A0626720FDD006DDE87 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C3A45A0826720FE3006DDE87 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C3A45A0E26721051006DDE87 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37EF21326720F030098F8FB /* SDWebImageSwiftUI in Frameworks */,
+				C37EF21026720E7D0098F8FB /* SwiftyJSON in Frameworks */,
+				C37EF20D26720E6D0098F8FB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +111,11 @@
 		C37EF1DA267203290098F8FB /* PetFood */ = {
 			isa = PBXGroup;
 			children = (
-				C37EF1DB267203290098F8FB /* AppDelegate.swift */,
-				C37EF1DD267203290098F8FB /* SceneDelegate.swift */,
-				C37EF1DF267203290098F8FB /* ContentView.swift */,
-				C37EF1E12672032B0098F8FB /* Assets.xcassets */,
-				C37EF1E62672032B0098F8FB /* LaunchScreen.storyboard */,
-				C37EF1E92672032B0098F8FB /* Info.plist */,
+				C37EF21426720F260098F8FB /* New Group */,
+				C3A45A0526720FD3006DDE87 /* common */,
+				C3A45A0A26720FE6006DDE87 /* Model */,
+				C3A45A0B26720FEB006DDE87 /* ViewModel */,
+				C3A45A0D26720FFB006DDE87 /* View */,
 				C37EF1E32672032B0098F8FB /* Preview Content */,
 			);
 			path = PetFood;
@@ -136,6 +147,50 @@
 			path = PetFoodUITests;
 			sourceTree = "<group>";
 		};
+		C37EF21426720F260098F8FB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		C3A45A0526720FD3006DDE87 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C37EF1DB267203290098F8FB /* AppDelegate.swift */,
+				C37EF1DD267203290098F8FB /* SceneDelegate.swift */,
+				C37EF1E12672032B0098F8FB /* 7B8794.xcassets */,
+				C37EF1E62672032B0098F8FB /* LaunchScreen.storyboard */,
+				C37EF1E92672032B0098F8FB /* Info.plist */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		C3A45A0A26720FE6006DDE87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3A45A0626720FDD006DDE87 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3A45A0B26720FEB006DDE87 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3A45A0826720FE3006DDE87 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C3A45A0D26720FFB006DDE87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C37EF1DF267203290098F8FB /* ContentView.swift */,
+				C3A45A0E26721051006DDE87 /* Main.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +207,11 @@
 			dependencies = (
 			);
 			name = PetFood;
+			packageProductDependencies = (
+				C37EF20C26720E6D0098F8FB /* Alamofire */,
+				C37EF20F26720E7D0098F8FB /* SwiftyJSON */,
+				C37EF21226720F030098F8FB /* SDWebImageSwiftUI */,
+			);
 			productName = PetFood;
 			productReference = C37EF1D8267203290098F8FB /* PetFood.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +283,11 @@
 				Base,
 			);
 			mainGroup = C37EF1CF267203290098F8FB;
+			packageReferences = (
+				C37EF20B26720E6D0098F8FB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C37EF20E26720E7D0098F8FB /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C37EF21126720F030098F8FB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = C37EF1D9267203290098F8FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,7 +306,7 @@
 			files = (
 				C37EF1E82672032B0098F8FB /* LaunchScreen.storyboard in Resources */,
 				C37EF1E52672032B0098F8FB /* Preview Assets.xcassets in Resources */,
-				C37EF1E22672032B0098F8FB /* Assets.xcassets in Resources */,
+				C37EF1E22672032B0098F8FB /* 7B8794.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,9 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A45A0F26721051006DDE87 /* Main.swift in Sources */,
+				C3A45A0926720FE3006DDE87 /* ViewModel.swift in Sources */,
 				C37EF1DC267203290098F8FB /* AppDelegate.swift in Sources */,
 				C37EF1DE267203290098F8FB /* SceneDelegate.swift in Sources */,
 				C37EF1E0267203290098F8FB /* ContentView.swift in Sources */,
+				C3A45A0726720FDD006DDE87 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PetFood/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PetFood/Info.plist;
+				INFOPLIST_FILE = PetFood/common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PetFood/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = PetFood/Info.plist;
+				INFOPLIST_FILE = PetFood/common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +659,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C37EF20B26720E6D0098F8FB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		C37EF20E26720E7D0098F8FB /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		C37EF21126720F030098F8FB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C37EF20C26720E6D0098F8FB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C37EF20B26720E6D0098F8FB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C37EF20F26720E7D0098F8FB /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C37EF20E26720E7D0098F8FB /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C37EF21226720F030098F8FB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C37EF21126720F030098F8FB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C37EF1D0267203290098F8FB /* Project object */;
 }
